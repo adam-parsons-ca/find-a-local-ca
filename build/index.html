@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Citizens Advice &ndash; Design System test</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!--  Header  -->
+	<header class="c-global-header">
+		<div class="c-wrap">
+			<h1 class="c-global-header__product-title">
+	    <img src="./images/citizens_advice_logo.svg"alt="Citizens Advice logo">
+	     </h1>
+		</div>
+	</header>
+
+	<!--  Main section  -->
+
+	<div class="c-wrap">
+		<div class="o-grid">
+
+			<!--Side section  -->
+			<div class="o-grid__unit o-grid__unit--t-1-3">
+
+				<!--Search box  -->
+				<div class="search-box">
+					<h2>Find a local Citizens Advice</h2>
+					<div class="fieldset">
+						<label for="standardField">Enter a postcode
+  </label>
+						<input id="standardField" type="text" pattern=".{3,10}" required class="searchfield" />
+						<button type="button" class="c-btn c-btn--primary c-btn--primary--search">
+							Search
+						</button>
+					</div>
+					<div class="location-link">
+						<a href="#">Use my location</a>
+					</div>
+				</div>
+
+				<!--  Scroll  -->
+
+				<div class="scroll-box">
+
+					<div class="outer-box">
+						<div class="box">
+							<p class="result-number">1.</p>
+							<p class="distance">20 miles</p>
+							<p class="office-name">Towerhamlets (East End) Citizens Advice</p>
+							<p class="first-line">32 Greatorex Street</p>
+							<p class="town-postcode">London E1 5NP</p>
+							<p class="phone">0207 247 1050</p>
+							<p class="hours">Open today until 5pm</p>
+							<a class="more-details" href="#">More about this office</a>
+						</div>
+						</div>
+
+						<div class="outer-box">
+							<div class="box">
+								<p class="result-number">1.</p>
+								<p class="distance">20 miles</p>
+								<p class="office-name">Towerhamlets (East End) Citizens Advice</p>
+								<p class="first-line">32 Greatorex Street</p>
+								<p class="town-postcode">London E1 5NP</p>
+								<p class="phone">0207 247 1050</p>
+								<p class="hours">Open today until 5pm</p>
+								<a class="more-details" href="#">More about this office</a>
+							</div>
+							</div>
+
+							<div class="outer-box">
+								<div class="box">
+									<p class="result-number">1.</p>
+									<p class="distance">20 miles</p>
+									<p class="office-name">Towerhamlets (East End) Citizens Advice</p>
+									<p class="first-line">32 Greatorex Street</p>
+									<p class="town-postcode">London E1 5NP</p>
+									<p class="phone">0207 247 1050</p>
+									<p class="hours">Open today until 5pm</p>
+									<a class="more-details" href="#">More about this office</a>
+								</div>
+								</div>
+
+								<div class="outer-box">
+									<div class="box">
+										<p class="result-number">1.</p>
+										<p class="distance">20 miles</p>
+										<p class="office-name">Towerhamlets (East End) Citizens Advice</p>
+										<p class="first-line">32 Greatorex Street</p>
+										<p class="town-postcode">London E1 5NP</p>
+										<p class="phone">0207 247 1050</p>
+										<p class="hours">Open today until 5pm</p>
+										<a class="more-details" href="#">More about this office</a>
+									</div>
+									</div>
+
+									<div class="outer-box">
+										<div class="box">
+											<p class="result-number">1.</p>
+											<p class="distance">20 miles</p>
+											<p class="office-name">Towerhamlets (East End) Citizens Advice</p>
+											<p class="first-line">32 Greatorex Street</p>
+											<p class="town-postcode">London E1 5NP</p>
+											<p class="phone">0207 247 1050</p>
+											<p class="hours">Open today until 5pm</p>
+											<a class="more-details" href="#">More about this office</a>
+										</div>
+										</div>
+
+										<div class="outer-box">
+											<div class="box">
+												<p class="result-number">1.</p>
+												<p class="distance">20 miles</p>
+												<p class="office-name">Towerhamlets (East End) Citizens Advice</p>
+												<p class="first-line">32 Greatorex Street</p>
+												<p class="town-postcode">London E1 5NP</p>
+												<p class="phone">0207 247 1050</p>
+												<p class="hours">Open today until 5pm</p>
+												<a class="more-details" href="#">More about this office</a>
+											</div>
+											</div>
+
+											<div class="outer-box">
+												<div class="box">
+													<p class="result-number">1.</p>
+													<p class="distance">20 miles</p>
+													<p class="office-name">Towerhamlets (East End) Citizens Advice</p>
+													<p class="first-line">32 Greatorex Street</p>
+													<p class="town-postcode">London E1 5NP</p>
+													<p class="phone">0207 247 1050</p>
+													<p class="hours">Open today until 5pm</p>
+													<a class="more-details" href="#">More about this office</a>
+												</div>
+												</div>
+
+				</div>
+
+
+			</div>
+			<div class="o-grid__unit o-grid__unit--t-2-3">
+				<div id="map"></div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<script src="js/bundle.js"></script>
+	<script>
+
+
+
+
+// Initialize and add the map
+function initMap() {
+// The location of Uluru
+var london = {lat: 51.519164, lng: 0.0674};
+// The map, centered at Uluru
+var map = new google.maps.Map(
+		document.getElementById('map'), {zoom: 12, center: london});
+
+
+
+
+
+// The marker, positioned at Uluru
+var marker = new google.maps.Marker({position: london, map: map, label:'1', });
+}
+
+	</script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWGVyh_ef0W_BMOGa-EVTtzG-J_ES2TO8&callback=initMap">
+    </script>
+
+</body>
+
+</html>

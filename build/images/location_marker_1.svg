@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="46px" viewBox="0 0 37 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Location</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Find-your-nearest" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.1" transform="translate(-1000.000000, -729.000000)">
+            <g id="Location" transform="translate(1000.000000, 729.000000)">
+                <g id="Pin-blue" fill="#004B88">
+                    <path d="M18.5,0 C28.8382353,0 37,8.21428571 37,18.0714286 C37,25.7380952 32.1029412,32.3095238 25.5735294,35.047619 L18.5,46 L11.4264706,35.047619 C4.89705882,32.3095238 0,25.7380952 0,18.0714286 C0,8.21428571 8.16176471,0 18.5,0 Z" id="Shape"></path>
+                </g>
+                <text id="1" font-family="OpenSans-Bold, Open Sans" font-size="16" font-weight="bold" fill="#F2F8FF">
+                    <tspan x="13.2956627" y="23.8333333">1</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

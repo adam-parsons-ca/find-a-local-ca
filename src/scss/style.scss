@@ -1,0 +1,88 @@
+@import "./node_modules/cadesignsystem/scss/cabui";
+
+.search-box {
+  // height: 200px;
+  border: 2px solid $brand--heritageBlue;
+  padding-left: $spacing--md;
+  padding-right: $spacing--md;
+
+  h2 {
+    margin-top: $spacing--md;
+  }
+
+  .searchfield {
+    width: 160px;
+    display: inline;
+    margin-right: $spacing--xs;
+
+  }
+
+  .location-link {
+
+    margin-top: $spacing--md;
+    margin-bottom: $spacing--lg;
+  }
+
+}
+.scroll-box {
+  height:calc(100vh - 427px);
+  display:block;
+  overflow: scroll;
+  border-bottom: 2px solid $monochrome--lightGrey;
+
+}
+.outer-box {
+  border: 2px solid $monochrome--lightGrey;
+  border-bottom:none;
+  display:block;
+  margin:0;
+  padding:0;
+}
+
+.outer-box:first-child{
+  border-top: none;
+}
+
+.box {
+  overflow: hidden;
+  padding-top:16px;
+  padding-bottom:$spacing--lg;
+  position: relative;
+  padding-left: $spacing--lg;
+
+
+  > * {
+    margin-bottom:0;
+    line-height: 1.5rem;
+
+  }
+}
+
+.result-number {
+  display: inline-block;
+  position: absolute;
+  left:0;
+  padding-left: $spacing--xs;
+  font-weight: 700;
+}
+
+
+
+
+.distance {
+  float:right;
+  margin-right: $spacing--xs;
+  padding-left:	$spacing--xs;
+
+
+}
+
+.office-name {
+font-weight: 700;
+}
+
+#map {
+  width: 100%;
+  height:calc(100vh - 187px);
+  background-color: $monochrome--grey;
+}
